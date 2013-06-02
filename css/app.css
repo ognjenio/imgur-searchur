@@ -1,0 +1,26 @@
+body{
+  background-image: url('img/gray_jean.png')
+}
+
+.well{
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff
+}
+
+#ng-view{
+  margin-top: 20px;
+}
+
+#placesList, #distances, #nndistances{
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#distances{
+  overflow-x: scroll;
+}
+
+fieldset{
+  margin-top: 0px;
+}
