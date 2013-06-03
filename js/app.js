@@ -24,6 +24,7 @@ window.is.generateVariations = function(){
 		variations.push(window.is.numberSubVariations());
 		variations = _.uniq(_.flatten(variations));
 		
+		variations.pop();
 		
 		var to_add = "";
 		to_add += "<div class=\"gallery\">";
