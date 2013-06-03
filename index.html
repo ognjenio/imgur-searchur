@@ -4,12 +4,20 @@
   <meta charset="utf-8">
   <title>imgur searchur</title>
   <link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+  <link rel="stylesheet" href="css/style.css" media="all" /> <!-- KICKSTART -->
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-
-  <div class="grid">
-    <input id="search" type="text" value="goat">
+	<div class="callout callout-top clearfix">
+		<div class="grid">
+			<h1>Imgur Searchur</h1>
+			<h4>Search imgur for files that have words in filenames! :O</h4>
+			
+			<input id="search" type="text" class="main">
+		</div>
+  </div>
+  
+  <div class="grid" id="results">
   </div>
 
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>

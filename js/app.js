@@ -14,7 +14,7 @@ window.is.numberSubs = {
 
 window.is.generateVariations = function(){
   var word = $("#search").val();
-  if (word.length >= 4)
+  if (word.length == 7)
 	{  
 		variations = []
 		
@@ -24,11 +24,24 @@ window.is.generateVariations = function(){
 		variations.push(window.is.numberSubVariations());
 		variations = _.uniq(_.flatten(variations));
 		
-		console.log(variations);
+		
+		var to_add = "";
+		to_add += "<div class=\"gallery\">";
+		
+		for (var i = 0; i < variations.length; i++)
+		{
+			to_add += "<a href=\"http://i.imgur.com/" + variations[i] + ".jpg\">";
+			to_add += "<img src=\"http://i.imgur.com/" + variations[i] + ".jpg\" width=\"100\" height=\"100\" />";
+			to_add += "</a>";	
+		}
+		to_add += "</div>";
+		$("#results").html(to_add);
+		
+		
 	}
 	else
 	{
-		alert("The search should be at least 6 characters.");
+		alert("The search should be 7 characters.");
 	}
 }
 

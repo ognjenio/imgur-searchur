@@ -24,3 +24,10 @@ body{
 fieldset{
   margin-top: 0px;
 }
+
+.main {
+	font-size: 35pt;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
